@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>Provides a lightweight framework component for encapsulating request and response objects in .NET 7, designed to facilitate the implementation of Onion Architecture and CQRS patterns in your applications. This component simplifies the management of requests and responses, promoting clean and structured code organization for your project</Description>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<RepositoryUrl>https://github.com/Dtopiast/OnionCrafter.Wrapper.Request.Base</RepositoryUrl>
+		<PackageTags>request-management, data handling, Onion Architecture, .NET 7, framework component, mediatr-extension, mediatr,cqrs</PackageTags>
+
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<IncludeSymbols>True</IncludeSymbols>
+		<Copyright>Copyright 2023 Dtopiast</Copyright>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<Version>$(VersionPrefix)</Version>
+		<Authors>Dtopiast</Authors>
+
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageIcon>JustLogo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\Images\JustLogo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MediatR" Version="12.1.1" />
+	  <PackageReference Include="OnionCrafter.Action.Request.Base" Version="1.0.0" />
+	  <PackageReference Include="OnionCrafter.Action.Response.Base" Version="1.0.0" />
+	  <PackageReference Include="OnionCrafter.Wrapper.Response.Base" Version="1.0.0" />
+	</ItemGroup>
+</Project>
